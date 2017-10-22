@@ -186,7 +186,7 @@ int package::addch(char s[20], int a)
 void package::makepackage()
 {
 	ifstream f;
-	//clrscr();
+	system("cls");
 	int num, res, ch, flag=1, choice, o;
 	char str[20];
 	if(n==1)  //global when modify package
@@ -205,7 +205,7 @@ void package::makepackage()
 		cin>>num;
 		for(int j=0; j<num; j++)
 		{
-		 //clrscr();
+		 system("cls");
 		 cout<<"\nDisplaying all packages:";
 		 dispallpack();
 		 cout<<"\nKindly select from which package would you like to add channel from:\t";
@@ -768,6 +768,7 @@ int main()
 	int choice, temp, res;
 	char ch,ch1,ans='y';
 	x:
+	system("cls");
 	cout<<"\n\t\t\t WELCOME TO myDTH SERVICE\n";
 	do
 	{
@@ -778,7 +779,7 @@ int main()
 	 cout<<"\t5. Exit\n";
 	 cout<<"\n\tEnter your option(1/2/3/4/5)\t";
 	 cin>>choice;
-	 //clrscr();
+	 system("cls");
 	 switch(choice)
 	 {
 		case 1:
